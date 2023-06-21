@@ -47,6 +47,8 @@ android {
 }
 
 val composeVersion: String by project
+val retrofitVersion : String by project
+val converterMoshiVersion: String by project
 val ktorVersion : String by project
 
 dependencies {
@@ -56,6 +58,8 @@ dependencies {
     implementation ("androidx.compose.ui:ui:$composeVersion")
     implementation ("androidx.compose.ui:ui-tooling-preview:$composeVersion")
     implementation ("androidx.compose.material3:material3:1.0.0-alpha11")
+    implementation("com.squareup.retrofit2:retrofit:$retrofitVersion")
+    implementation("com.squareup.retrofit2:converter-moshi:$converterMoshiVersion")
     implementation("io.ktor:ktor-client-core:$ktorVersion")
     implementation("io.ktor:ktor-client-cio:$ktorVersion")
     testImplementation ("junit:junit:4.13.2")

@@ -1,5 +1,7 @@
 buildscript {
     val composeVersion: String by extra("1.4.1")
+    val retrofitVersion: String by extra("2.9.0")
+    val converterMoshiVersion: String by extra("2.9.0")
     val ktorVersion: String by extra("2.3.1")
 
     repositories {
